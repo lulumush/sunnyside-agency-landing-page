@@ -3,13 +3,15 @@ import React from 'react'
 import arrowDown from '../assets/images/icon-arrow-down.svg'
 //import framer motion
 import { motion } from 'framer-motion'
+import Navbar from './Navbar'
 
 function Header() {
   return (
-    <header className='bg-headerMobile h-[100vh] bg-cover bg-center  md:bg-headerDesktop'>
-        <div className='flex flex-col justify-center items-center text-center h-full gap-16'>
-            <h1 className='text-white font-fraunces text-4xl tracking-[6px] md:text-6xl'>WE ARE CREATIVES</h1>
-            <a href="#">
+    <header className='bg-headerMobile h-[100vh] bg-cover bg-no-repeat bg-center  md:bg-headerDesktop'>
+        <div className='flex flex-col justify-center items-center h-full gap-16'>
+            <Navbar />
+            <h1 className='text-white text-center font-fraunces text-4xl tracking-[6px] md:text-6xl'>WE ARE CREATIVES</h1>
+            <a href="#about">
                 <motion.img 
                     animate={{ y: [-10, 10, -10] }}
                     transition={{
