@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 //import mobile menu icon
 import hamburgerIcon from '../assets/images/icon-hamburger.svg'
 //import logo
@@ -6,19 +6,13 @@ import logo from '../assets/images/logo.svg'
 
 
 function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false)
     const [click, setClick] = useState(false)
     const closeMenu = () => setClick(false)
 
-    useEffect(() => {
-		window.addEventListener("scroll", () => {
-			window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false)
-		})
-	})
-
+  
     return (
 
-        <div className={`${isScrolled && 'shadow-lg'} fixed top-0 left-0 w-full p-8 z-10 transition-all duration-500 lg:p-10`}>
+        <div className='absolute top-0 left-0 w-full p-8 z-10 transition-all duration-500 lg:p-10'>
             <div className='flex justify-between items-center relative'>
                 <img src={logo} alt='logo' />
                 {/* Nav button - show by default - hidden on desktop */}
