@@ -8,6 +8,10 @@ module.exports = {
         backgroundImage: {
             'headerMobile': 'url(assets/images/mobile/image-header.jpg)',
             'headerDesktop': 'url(assets/images/desktop/image-header.jpg)',
+            'servicesPhotographyMobile': 'url(assets/images/mobile/image-photography.jpg)',
+            'servicesPhotographyDesktop': 'url(assets/images/desktop/image-photography.jpg)',
+            'servicesDesignMobile': 'url(assets/images/mobile/image-graphic-design.jpg)',
+            'servicesDesignDesktop': 'url(assets/images/desktop/image-graphic-design.jpg)',
         },
         colors: {
             'softRed': 'hsl(7, 99%, 70%)',
@@ -25,6 +29,9 @@ module.exports = {
             'barlow': 'Barlow, sans-serif',
             'fraunces' : 'Fraunces, serif',
         },
+        screens: {
+            'smd': '450px',
+          },
       },
     },
     plugins: [],

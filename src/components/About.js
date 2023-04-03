@@ -9,7 +9,7 @@ function About() {
         <section id="about">
             <div className='grid grid-cols-1 auto-rows-fr md:grid-cols-2'>
                 <div className='order-1 md:order-2'>
-                    <img src={transformMobile} alt="egg on a yellow background" className='h-full object-cover lg:hidden'/>
+                    <img src={transformMobile} alt="egg on a yellow background" className='h-full w-full object-cover lg:hidden'/>
                     <img src={transformDesktop} alt="egg on a yellow background" className='hidden lg:block lg:object-cover lg:w-full'/>
                 </div>
                 <div className='order-2 md:order-1 flex flex-col justify-center text-center px-4 py-10 gap-y-10'>
@@ -23,7 +23,7 @@ function About() {
             </div>
             <div className='grid grid-cols-1 auto-rows-fr md:grid-cols-2'>
                 <div className='order-1'>
-                    <img src={standOutMobile} alt="glass painted in pink" className='h-full object-cover lg:hidden'/>
+                    <img src={standOutMobile} alt="glass painted in pink" className='h-full w-full object-cover lg:hidden'/>
                     <img src={standOutDesktop} alt="glass painted in pink" className='hidden lg:block lg:object-cover lg:w-full'/>
                 </div>
                 <div className='order-2 flex flex-col justify-center text-center px-4 py-10 gap-y-10'>
