@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 //import mobile menu icon
 import hamburgerIcon from '../assets/images/icon-hamburger.svg'
 //import logo
-import logo from '../assets/images/logo.svg'
+import {ReactComponent as Logo} from '../assets/images/logo.svg'
+
 
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
 
         <div className='absolute top-0 left-0 w-full p-8 z-10 transition-all duration-500 lg:p-10'>
             <div className='flex justify-between items-center relative'>
-                <img src={logo} alt='logo' />
+                <Logo className='fill-white' />
                 {/* Nav button - show by default - hidden on desktop */}
                 <div className='cursor-pointer lg:hidden' onClick={() => setClick(!click)}>
                     <img src={hamburgerIcon} alt='mobile menu icon' />
